@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  color: rgb(95, 95, 95);
+}
+
+input {
+  display: flex;
+}
+
+input [type="text"] {
+  text-align: center;
+  font-size: 150%;
+}
+
+input[class="approve"] {
+  background-color: white;
+  color: rgb(27, 219, 75);
+  padding: 12px 15px;
+  border: rgb(27, 219, 75) solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+input[class="decline"] {
+  background-color: white;
+  color: rgb(228, 25, 25);
+  padding: 12px 15px;
+  border: rgb(228, 25, 25) solid 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+}
+
+.card {
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-content {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+}
+.card-content > img {
+  align-self: flex-end;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+h3 {
+  color: black;
+}
+footer {
+  display: flex;
+  padding: 10px;
+  border-top: 2px solid #e7e7e7;
+}
